@@ -1,0 +1,27 @@
+<!-- LOGIN FORM  -->
+<div class="panel panel-default" style="width : 300px; margin-left: auto; margin-right: auto;">
+    <div class="panel-heading">
+        <h3 class="panel-title">Log In</h3>
+    </div>
+    <div class="panel-body">
+        <form name="login">
+            <div class="form-group">
+                <label for="inputEmail">Email Address</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="user@domain.com">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="6 chars. or more">
+            </div>
+            <div class="checkbox">
+                <label>
+              <input type="checkbox"> Keep me logged in
+            </label>
+            </div>
+            <button type="submit" class="btn btn-success">Log In</button> or <a ui-sref="welcome.register">Register</a>
+        </form>
+
+    </div>
+</div>
+</div>
+<a  target="_self" href="/auth/facebook" class="btn navbar-btn btn-primary">Log In with Facebook</a>

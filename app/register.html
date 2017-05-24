@@ -1,0 +1,44 @@
+
+
+
+<!-- REGISTER FORM -->
+<div class="panel panel-default" style="width : 300px; margin-left: auto; margin-right: auto;">
+  <div class="panel-heading">
+  <h3 class="panel-title">Register</h3>
+</div>
+  <div class="panel-body">
+<form  name="register">
+  <div class="form-group" >
+    <label for="inputfirstName">First Name</label>
+    <input type="text" class="form-control" id="inputfirstName" placeholder="John">
+  </div>
+  <div class="form-group" >
+    <label for="inputlastName">Last Name</label>
+    <input type="text" class="form-control" id="inputfirstName" placeholder="Doe">
+  </div>
+<div class="form-group" >
+<label for="inputEmail">Email Address</label>
+<input type="email" class="form-control" id="inputEmail" placeholder="user@domain.com">
+</div>
+<div class="form-group" >
+<label for="lastName">Password</label>
+<input type="password" class="form-control" id="inputPassword" placeholder="6 chars. or more">
+</div>
+<!-- <div class="form-group">
+<label for="exampleInputFile">File input</label>
+<input type="file" id="exampleInputFile">
+<p class="help-block">Example block-level help text here.</p>
+</div> -->
+<div class="checkbox">
+<!-- <label>
+  <input type="checkbox"> Keep me logged in
+</label> -->
+</div>
+<button type="submit" class="btn btn-primary">Register</button>
+or <a ui-sref="welcome.login">Log In</a>
+
+
+</form>
+<button class="btn btn-default" ng-click="go('welcome')"></button>
+</div>
+</div>
