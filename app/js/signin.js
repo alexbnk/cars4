@@ -1,4 +1,4 @@
-angular.module('publicApp')
+angular.module('cars4')
 
     .controller('testCtrl', function($rootScope, $scope, $http, $window, testFactory) {
         $scope.someText = "hello test";
@@ -8,7 +8,7 @@ angular.module('publicApp')
         })
 
         if ($rootScope.isAuthenticated) {
-            $scope.btnlbl = 'Log out';
+            $scope.btnlbl = 'Log out ';
         } else {
             $scope.btnlbl = 'Log in'
         }

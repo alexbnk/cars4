@@ -15,22 +15,23 @@ angular.module('cars4', ['ui.router'])
         $stateProvider
             .state('welcome', {
                 url: '/welcome',
-                templateUrl: 'welcome.html',
+                templateUrl: './templates/welcome.html',
                 controller: 'authCtrl'
             })
+            
             .state('welcome.register', {
                 url: '/register',
-                templateUrl: 'register.html',
+                templateUrl: './templates/register.html',
                 controller: 'authCtrl'
             })
             .state('welcome.login', {
                 url: '/login',
-                templateUrl: 'login.html',
+                templateUrl: './templates/login.html',
                 controller: 'authCtrl'
             })
             .state('app', {
                 url: '/app',
-                templateUrl: 'app.html',
+                templateUrl: './templates/signin.html',
                 resolve: {
                     // user: function(authService) {
                     //     return authService.getUserDetails();
@@ -45,7 +46,7 @@ angular.module('cars4', ['ui.router'])
                         name: $stateParams.name,
                         token: $stateParams.token,
                         oid: $stateParams.oid,
-                        photo: $stateParams.photoURI
+                        //photo: $stateParams.photoURI
 
                     };
                     // Save user info in localStorage:
@@ -54,6 +55,7 @@ angular.module('cars4', ['ui.router'])
 
                     //set the header for all requests
                     $http.defaults.headers.common.Authorization = 'Bearer ' + user.token;
+
 
 
 

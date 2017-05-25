@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // use morgan to log
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 
 //Routes definitions in external files
 
